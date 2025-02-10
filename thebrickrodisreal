@@ -196,19 +196,6 @@ local Button = GarouTab:CreateButton({
    end
 })
 
-local Button = GarouTab:CreateButton({
-   Name = "Geto",
-   Callback = function()
-      loadstring(game:HttpGet("https://paste.ee/r/70OTE"))()
-   end
-})
-
-local Button = GarouTab:CreateButton({
-   Name = "Shinjuku Showdown Arc Yuji",
-   Callback = function()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/Kenjihin69/Kenjihin69/refs/heads/main/Yuji%20early%20access"))()
-   end
-})
 
 local Button = GarouTab:CreateButton({
    Name = "Kira",
@@ -222,13 +209,6 @@ local Button = GarouTab:CreateButton({
    Callback = function()
       loadstring(game:HttpGet("https://paste.ee/r/zzvAH"))()
    end
-})
-
-local Button = GarouTab:CreateButton({
-   Name = "Kizaru",
-   Callback = function()
-      loadstring(game:HttpGet("https://paste.ee/r/NPnfk"))()
-   end,
 })
 
 local GenosTab = Window:CreateTab("Genos Movesets", 14392042671) -- Title, Image
