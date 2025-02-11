@@ -32,7 +32,7 @@ Rayfield:Notify({
    Duration = 5,
    Image = 11028728542,
 })
-local SaitamaTab = Window:CreateTab("Moveset Scripts", 6768758604) -- Title, Image
+local SaitamaTab = Window:CreateTab("Moveset Scripts", "sword") -- Title, Image
 local Button = SaitamaTab:CreateButton({
    Name = "JJS Gojo",
    Callback = function()
@@ -57,6 +57,20 @@ local Button = SaitamaTab:CreateButton({
    Callback = function()
       loadstring(game:HttpGet("https://gist.githubusercontent.com/GoldenHeads2/5fe3178dff916f988d319c3bd5e4fc01/raw/b250ee6f967c4e84195a76ab7915fb1d79b53326/gistfile1.txt"))()
    end
+})
+
+local Button = SaitamaTab:CreateButton({
+   Name = "Gojo Domain (rct)",
+   Callback = function()
+      loadstring(game:HttpGet("https://pastebin.com/raw/777Q4QDN",true))()
+   end,
+})
+
+local Button = SaitamaTab:CreateButton({
+   Name = "Trashcan Man",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/yes1nt/yes/refs/heads/main/Trashcan%20Man", true))()
+   end,
 })
 
 local Button = SaitamaTab:CreateButton({
@@ -121,7 +135,7 @@ local Button = SaitamaTab:CreateButton({
         loadstring(game:HttpGet('https://raw.githubusercontent.com/Kenjihin69/Kenjihin69/refs/heads/main/Shinji%20tp%20exploit'))()
     end
 })
-local GarouTab = Window:CreateTab("Garou Movesets", 16157086382) -- Title, Image
+local GarouTab = Window:CreateTab("Garou Movesets", "sword") -- Title, Image
 
 local Button = GarouTab:CreateButton({
    Name = "Freddy",
@@ -211,7 +225,7 @@ local Button = GarouTab:CreateButton({
    end
 })
 
-local GenosTab = Window:CreateTab("Genos Movesets", 14392042671) -- Title, Image
+local GenosTab = Window:CreateTab("Genos Movesets", "sword") -- Title, Image
 
 local Button = GenosTab:CreateButton({
    Name = "Genos Mastery",
@@ -220,7 +234,7 @@ local Button = GenosTab:CreateButton({
    end,
 })
 
-local SonicTab = Window:CreateTab("Sonic Movesets", 91117039076715)
+local SonicTab = Window:CreateTab("Sonic Movesets", "sword")
 
 local Button = SonicTab:CreateButton({
    Name = "Voltra",
@@ -236,7 +250,7 @@ local Button = SonicTab:CreateButton({
    end
 })
 
-local MetalTab = Window:CreateTab("Metal Bat Movesets", 15683025468)
+local MetalTab = Window:CreateTab("Metal Bat Movesets", "sword")
 
 local Button = MetalTab:CreateButton({
    Name = "Reaper",
@@ -253,7 +267,7 @@ local Button = MetalTab:CreateButton({
    end
 })
 
-local AtomicTab = Window:CreateTab("Atomic Samurai Movesets", 2835668634)
+local AtomicTab = Window:CreateTab("Atomic Samurai Movesets", "sword")
 
 local Button = AtomicTab:CreateButton({
    Name = "Sukuna",
@@ -276,11 +290,26 @@ local Button = AtomicTab:CreateButton({
    end,
 })
 
-local MiscTab = Window:CreateTab("Misc", 1027618973) -- Title, Image
+local MiscTab = Window:CreateTab("Misc", "mouse") -- Title, Image
 local Section = MiscTab:CreateSection("Infinite Yield")
 local Button = MiscTab:CreateButton({
    Name = "Activate Infinite Yield",
    Callback = function()
       loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
    end
+})
+
+local Slider = MiscTab:CreateSlider({
+   Name = "Walkspeed",
+   Range = {16, 200},
+   Increment = 10,
+   Suffix = "Speed",
+   CurrentValue = 16,
+   Flag = "walkspeedslider", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+      local plr = game.Players.LocalPlayer
+      local char = plr.Character
+      local hum = char:WaitForChild("Humanoid")
+      hum.Walkspeed = Value
+   end,
 })
