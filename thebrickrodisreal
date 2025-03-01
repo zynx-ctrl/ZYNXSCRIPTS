@@ -380,10 +380,3 @@ local Slider = MiscTab:CreateSlider({
       hum.WalkSpeed = Value
    end,
 })
-
-local Button = MiscTab:CreateButton({
-   Name = "FPS booster",
-   Callback = function()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/insanedude59/MiscReleases/main/Roblox/UWPFPSBooster.lua"))()
-   end,
-})
