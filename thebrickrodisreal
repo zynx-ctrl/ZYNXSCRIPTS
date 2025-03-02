@@ -407,6 +407,20 @@ local Button = GarouTab:CreateButton({
    end,
 })
 
+local Button = AtomicTab:CreateButton({
+   Name = "Yuta",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/damir512/AtomicToYuta/main/Protected_8122576078506000.txt"))()
+   end,
+})
+
+local Button = MetalTab:CreateButton({
+   Name = "Kratos",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/Nova2ezz/Kratoss/refs/heads/main/moveset"))()
+   end,
+})
+
 local MiscTab = Window:CreateTab("Misc", "mouse") -- Title, Image
 local Section = MiscTab:CreateSection("Infinite Yield")
 local Button = MiscTab:CreateButton({
@@ -432,7 +446,7 @@ local Slider = MiscTab:CreateSlider({
 })
 
 local Slider = MiscTab:CreateSlider({
-   Name = "JumpPower (has bug too)",
+   Name = "JumpPower",
    Range = {50, 1000},
    Increment = 10,
    Suffix = "jump",
