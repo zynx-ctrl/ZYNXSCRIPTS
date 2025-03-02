@@ -343,6 +343,13 @@ local Button = SaitamaTab:CreateButton({
    end,
 })
 
+local Button = GarouTab:CreateButton({
+   Name = "John Doe",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/Luckyfromyoutube/JohnDoe/refs/heads/main/TSBMODEL"))()
+   end,
+})
+
 local Button = SaitamaTab:CreateButton({
    Name = "Sung Jin Woo (SO OP OMG)",
    Callback = function()
@@ -354,6 +361,49 @@ local Button = SonicTab:CreateButton({
    Name = "1x1x1x1",
    Callback = function()
        loadstring(game:HttpGet("https://gist.githubusercontent.com/GoldenHeads2/900e87ffc32f3c740930ccb106dd6abf/raw/358c5bf0f0a6aa25946718288dab006e3ae7e1d4/gistfile1.txt"))()
+   end,
+})
+
+local Button = AtomicTab:CreateButton({
+   Name = "The Dark Lord",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/Qaiddanial2904/Main/refs/heads/main/Dark%20lord"))()
+   end,
+})
+
+local Button = GarouTab:CreateButton({
+   Name = "Dio",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/ThanakritScript/StandUserCilent/refs/heads/main/DioBeta.lua",true))()
+   end,
+})
+
+local Button = SaitamaTab:CreateButton({
+   Name = "KKJ (KuyJuy)",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/4ntrax7w7v9/4ntrax-Scripts/refs/heads/main/KKJ-Moveset"))()
+   end,
+})
+
+local Button = SaitamaTab:CreateButton({
+   Name = "Gojo v2",
+   Callback = function()
+       getgenv().morph = true -- turn false to true if you want custom accessories
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletfan2007/BaldyToSorcerer/refs/heads/main/LatestV2.lua"))()
+   end,
+})
+
+local Button = SaitamaTab:CreateButton({
+   Name = "Sukuna MANGÁ",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/niki21233/undonethokunas/refs/heads/main/thokunasundone"))()
+   end,
+})
+
+local Button = GarouTab:CreateButton({
+   Name = "Cosmic Garou",
+   Callback = function()
+       loadstring(game:HttpGet("https://pastebin.com/raw/kT3Z8rse"))()
    end,
 })
 
@@ -382,7 +432,7 @@ local Slider = MiscTab:CreateSlider({
 })
 
 local Slider = MiscTab:CreateSlider({
-   Name = "JumpPower",
+   Name = "JumpPower (has bug too)",
    Range = {50, 1000},
    Increment = 10,
    Suffix = "jump",
